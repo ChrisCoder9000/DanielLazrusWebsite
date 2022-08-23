@@ -1,15 +1,33 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-	margin-left: 160px;
-	margin-right: 160px;
-	max-width: 1920px;
-	height: 101px;
+	width: 100%;
+	background-color: none;
+	height: 9.35vh;
 	align-items: center;
 	display: flex;
+	font-size: 1rem;
+	color: ${({ theme }) => theme.colors.secondary};
 	justify-content: space-between;
+	position: fixed;
+
+	z-index: 1;
+
+	.blackHeader {
+		background-color: ${({ theme }) => theme.colors.primary};
+	}
+
+	.nav {
+		margin-right: 8.33vw;
+	}
+
+	.headerLogo {
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin-left: 8.33vw;
+	}
 
 	.navSpan {
-		margin-left: 80px;
+		margin-left: 4.16vw;
 	}
 `;
