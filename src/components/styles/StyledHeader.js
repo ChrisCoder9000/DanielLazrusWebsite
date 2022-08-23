@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
 	width: 100%;
-	background-color: none;
+	background-color: ${(props) => (props.isScrolled ? props.primaryColor : "")};
 	height: 9.35vh;
 	align-items: center;
 	display: flex;
@@ -12,10 +12,6 @@ export const StyledHeader = styled.header`
 	position: fixed;
 
 	z-index: 1;
-
-	.blackHeader {
-		background-color: ${({ theme }) => theme.colors.primary};
-	}
 
 	.nav {
 		margin-right: 8.33vw;

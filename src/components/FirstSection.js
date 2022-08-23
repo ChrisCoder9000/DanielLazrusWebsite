@@ -11,7 +11,7 @@ const FirstSection = () => {
 				<div className='textLeft'>
 					<h3 className='name'>Daniel Lazrus</h3>
 					<h1 className='nick'>DLAZ</h1>
-					<p className='quote'>'Hard Work Pays"</p>
+					<p className='quote'>"Hard Work Pays"</p>
 					<div className='actions'>
 						<button className='enrollNow'>Enroll NOW</button>
 						<span className='learnMore'>learn more &rsaquo;</span>

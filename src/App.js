@@ -1,8 +1,11 @@
-import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
+import { useState, useEffect, useCallback } from "react";
 
 import "./App.css";
+
+import Header from "./components/Header";
 import FirstSection from "./components/FirstSection";
+import SecondSection from "./components/SecondSection";
 
 const theme = {
 	colors: {
@@ -12,11 +15,28 @@ const theme = {
 };
 
 function App() {
+	const [scroll, setScrolled] = useState(false);
+
+	const scrollHandler = useCallback(() => {
+		if (window.pageYOffset > 100) {
+			setScrolled(true);
+		}
+
+		if (window.pageYOffset < 100) {
+			setScrolled(false);
+		}
+	}, []);
+
+	useEffect(() => {
+		window.addEventListener("scroll", scrollHandler);
+	}, [scrollHandler]);
+
 	return (
 		<ThemeProvider theme={theme}>
 			<div className='divApp'>
-				<Header />
+				<Header isScrolled={scroll} primaryColor={theme.colors.primary} />
 				<FirstSection />
+				<SecondSection />
 			</div>
 		</ThemeProvider>
 	);

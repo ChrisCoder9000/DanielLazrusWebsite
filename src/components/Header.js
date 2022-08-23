@@ -1,8 +1,11 @@
 import { StyledHeader } from "./styles/StyledHeader";
 
-const Header = () => {
+const Header = (props) => {
 	return (
-		<StyledHeader>
+		<StyledHeader
+			isScrolled={props.isScrolled}
+			primaryColor={props.primaryColor}
+		>
 			<span className='headerLogo'>DLAZ</span>
 			<nav className='nav'>
 				<span className='navSpan'>Who is Daniel Lazarus ?</span>

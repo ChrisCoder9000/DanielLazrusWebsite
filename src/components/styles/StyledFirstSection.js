@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const StyledFirstSection = styled.div`
 	.mainDiv {
 		margin: 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "overlap";
 	}
 
 	.firstImage {
@@ -71,7 +75,6 @@ export const StyledFirstSection = styled.div`
 	}
 
 	.imageDiv {
-		position: absolute;
 		width: 100%;
 	}
 `;
