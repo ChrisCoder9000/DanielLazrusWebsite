@@ -13,9 +13,10 @@ export const StyledSecondSection = styled.div`
 
 	.firstWrapper {
 		text-align: start;
+		display: grid;
 	}
 
-	.imageDiv {
+	.imageFirstKeyDiv {
 		margin-top: 6.2vh;
 		margin-left: 8.33vw;
 		display: inline-block;
@@ -37,13 +38,16 @@ export const StyledSecondSection = styled.div`
 	}
 
 	.blackOverlay {
-		background-color: ${({ theme }) => theme.colors.primary};
+		background: ${({ theme }) => theme.colors.primary};
+		margin-left: 38.7vw;
 		margin-right: 8.33vw;
+		margin-top: -11.92vw;
 		width: 52.97vw;
 	}
 
 	.blackOverlayParagraph {
-		margin-left: 6.48vw;
+		margin-left: 3.65vw;
+		margin-top: 3.35vw;
 		text-align: left;
 	}
 `;
