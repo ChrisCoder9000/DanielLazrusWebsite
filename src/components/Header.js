@@ -8,9 +8,11 @@ const Header = (props) => {
 		>
 			<span className='headerLogo'>DLAZ</span>
 			<nav className='nav'>
-				<span className='navSpan'>Who is Daniel Lazarus ?</span>
-				<span className='navSpan'>Monthly Coaching Subscriptions</span>
-				<span className='navSpan'>Why You Should Enroll?</span>
+				<a className='navSpan' href='#who'>
+					Who is Daniel Lazarus ?
+				</a>
+				<a className='navSpan'>Monthly Coaching Subscriptions</a>
+				<a className='navSpan'>Why You Should Enroll?</a>
 			</nav>
 		</StyledHeader>
 	);

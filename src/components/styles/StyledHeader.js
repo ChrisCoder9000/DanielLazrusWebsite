@@ -25,5 +25,12 @@ export const StyledHeader = styled.header`
 
 	.navSpan {
 		margin-left: 4.16vw;
+		text-decoration: none;
+		color: ${({ theme }) => theme.colors.secondary};
+
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
 	}
 `;

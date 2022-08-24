@@ -72,6 +72,12 @@ export const StyledFirstSection = styled.div`
 		display: block;
 		font-size: 2.67vh; /* 1.813rem */
 		margin-top: 3.05vh; /* 33px */
+		color: ${({ theme }) => theme.colors.secondary};
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	.imageDiv {
