@@ -7,12 +7,14 @@ import Header from "./components/Header";
 import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
+import Footer from "./components/Footer";
 
 const theme = {
 	colors: {
 		primary: "#000102",
 		secondary: "#F2F2F2",
 		accent: "#777",
+		gray: "#212121",
 	},
 };
 
@@ -40,6 +42,7 @@ function App() {
 				<FirstSection />
 				<SecondSection />
 				<ThirdSection />
+				<Footer />
 			</div>
 		</ThemeProvider>
 	);

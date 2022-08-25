@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledThirdSection = styled.div`
+	margin-left: 8.33vw;
+	margin-right: 8.33vw;
+
 	.titleDiv {
 		padding-top: 12.07vh;
 	}
@@ -17,6 +20,7 @@ export const StyledThirdSection = styled.div`
 
 	.mainWrapper {
 		display: inline-flex;
+		margin-bottom: 22.5vh;
 
 		.whyKeys {
 			margin-top: 12.07vh;
@@ -25,12 +29,16 @@ export const StyledThirdSection = styled.div`
 			.spanKeys {
 				font-family: sans-serif;
 				font-weight: bold;
-				font-size: 2.03vw;
+				font-size: 1.8vw;
 			}
 
 			.listKeys {
 				margin-top: 3.52vw;
 				text-align: left;
+
+				@media (min-width: 1921px) {
+					margin-top: 67.58px;
+				}
 			}
 		}
 	}
