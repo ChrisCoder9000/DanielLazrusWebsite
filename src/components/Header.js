@@ -11,8 +11,12 @@ const Header = (props) => {
 				<a className='navSpan' href='#who'>
 					Who is Daniel Lazarus ?
 				</a>
-				<a className='navSpan'>Monthly Coaching Subscriptions</a>
-				<a className='navSpan'>Why You Should Enroll?</a>
+				<a className='navSpan' href='#tiers'>
+					Monthly Coaching Subscriptions
+				</a>
+				<a className='navSpan' href='#tiers'>
+					Why You Should Enroll?
+				</a>
 			</nav>
 		</StyledHeader>
 	);

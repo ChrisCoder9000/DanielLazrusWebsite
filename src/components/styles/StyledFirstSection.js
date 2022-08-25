@@ -59,6 +59,7 @@ export const StyledFirstSection = styled.div`
 		font-size: 2.67vh; /* 1.813rem */
 		font-weight: 300;
 		background: none;
+		text-decoration: none;
 
 		&:hover {
 			background: ${({ theme }) => theme.colors.secondary};

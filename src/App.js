@@ -6,6 +6,7 @@ import "./App.css";
 import Header from "./components/Header";
 import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
+import ThirdSection from "./components/ThirdSection";
 
 const theme = {
 	colors: {
@@ -37,6 +38,7 @@ function App() {
 				<Header isScrolled={scroll} primaryColor={theme.colors.primary} />
 				<FirstSection />
 				<SecondSection />
+				<ThirdSection />
 			</div>
 		</ThemeProvider>
 	);

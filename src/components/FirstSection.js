@@ -13,7 +13,9 @@ const FirstSection = () => {
 					<h1 className='nick'>DLAZ</h1>
 					<p className='quote'>"Hard Work Pays"</p>
 					<div className='actions'>
-						<button className='enrollNow'>Enroll NOW</button>
+						<a className='enrollNow' href='#tiers'>
+							Enroll NOW
+						</a>
 						<a className='learnMore' href='#who'>
 							learn more &rsaquo;
 						</a>
