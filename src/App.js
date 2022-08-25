@@ -8,6 +8,7 @@ import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
 import Footer from "./components/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 const theme = {
 	colors: {
@@ -36,15 +37,17 @@ function App() {
 	}, [scrollHandler]);
 
 	return (
-		<ThemeProvider theme={theme}>
-			<div className='divApp'>
-				<Header isScrolled={scroll} primaryColor={theme.colors.primary} />
-				<FirstSection />
-				<SecondSection />
-				<ThirdSection />
-				<Footer />
-			</div>
-		</ThemeProvider>
+		<BrowserRouter>
+			<ThemeProvider theme={theme}>
+				<div className='divApp'>
+					<Header isScrolled={scroll} primaryColor={theme.colors.primary} />
+					<FirstSection />
+					<SecondSection />
+					<ThirdSection />
+					<Footer />
+				</div>
+			</ThemeProvider>
+		</BrowserRouter>
 	);
 }
 
