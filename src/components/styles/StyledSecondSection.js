@@ -56,7 +56,10 @@ export const StyledSecondSection = styled.div`
 	}
 
 	.leftKeysWrapper {
-		margin-top: 7vh;
+		margin-top: 10vh;
+		display: grid;
+		align-items: end;
+		height: 70vh;
 	}
 
 	.blackOverlay {
