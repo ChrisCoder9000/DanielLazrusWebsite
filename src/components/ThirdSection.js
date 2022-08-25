@@ -1,6 +1,9 @@
+import ListKey from "./ListKey";
 import { StyledThirdSection } from "./styles/StyledThirdSection";
 import Tier from "./Tier";
 import TitleComponent from "./TitleComponent";
+
+import cards from "../assets/cards.png";
 
 const ThirdSection = () => {
 	return (
@@ -36,7 +39,17 @@ const ThirdSection = () => {
 					</div>
 				</div>
 				<div className='whyKeys'>
-					<span>Learn the key to crush MTT’s and deep stack cash</span>
+					<span className='spanKeys'>
+						Learn the key to crush MTT’s and deep stack cash
+					</span>
+					<ListKey
+						image={cards}
+						text='Learn how to implement game theory vs. population'
+					/>
+					<ListKey />
+					<ListKey />
+					<ListKey />
+					<ListKey />
 				</div>
 			</div>
 		</StyledThirdSection>

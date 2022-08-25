@@ -17,5 +17,15 @@ export const StyledThirdSection = styled.div`
 
 	.mainWrapper {
 		display: flex;
+
+		.whyKeys {
+			margin-top: 12.07vh;
+
+			.spanKeys {
+				font-family: sans-serif;
+				font-weight: bold;
+				font-size: 2.375rem;
+			}
+		}
 	}
 `;
