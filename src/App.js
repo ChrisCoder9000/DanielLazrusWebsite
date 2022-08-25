@@ -12,6 +12,7 @@ const theme = {
 	colors: {
 		primary: "#000102",
 		secondary: "#F2F2F2",
+		accent: "#777",
 	},
 };
 

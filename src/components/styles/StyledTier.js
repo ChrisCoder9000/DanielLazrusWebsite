@@ -36,6 +36,11 @@ export const StyledTier = styled.div`
 			font-weight: bold;
 			margin-right: 1.77vw;
 
+			&:hover {
+				color: ${({ theme }) => theme.colors.accent};
+				cursor: pointer;
+			}
+
 			@media (min-width: 1921px) {
 				font-size: 56px;
 				margin-right: 34px;

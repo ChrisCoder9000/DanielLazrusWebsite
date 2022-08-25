@@ -6,7 +6,9 @@ const Tier = (props) => {
 			<div className='buttonDiv'>
 				<div className='tierName'>{props.tierName}</div>
 				<div>
-					<span className='enrollText'>enroll</span>
+					<span className='enrollText' onClick={props.onClick}>
+						enroll
+					</span>
 				</div>
 			</div>
 			<div className='textDiv'>
