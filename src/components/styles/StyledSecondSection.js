@@ -32,7 +32,11 @@ export const StyledSecondSection = styled.div`
 
 	.imageTwo {
 		padding-top: 3vw;
-		padding-left: 3.65vw;
+
+		@media (min-width: 1080px) {
+			padding-left: 3.65vw;
+		}
+
 		width: -webkit-fill-available;
 	}
 
@@ -66,14 +70,21 @@ export const StyledSecondSection = styled.div`
 
 	.blackOverlay {
 		background: ${({ theme }) => theme.colors.primary};
-		margin-left: 38.7vw;
-		margin-right: 8.33vw;
+
+		@media (min-width: 1080px) {
+			margin-left: 38.7vw;
+			margin-right: 8.33vw;
+		}
+
 		margin-top: -10vw;
 		width: 52.97vw;
 	}
 
 	.blackOverlayParagraph {
-		padding-left: 3.65vw;
+		@media (min-width: 1080px) {
+			padding-left: 3.65vw;
+		}
+
 		padding-top: 3vw;
 		text-align: left;
 	}
@@ -90,7 +101,34 @@ export const StyledSecondSection = styled.div`
 			display: block;
 
 			.imageDiv {
-				width: -webkit-fill-available;
+				width: auto;
+
+				.imageThree {
+					width: -webkit-fill-available;
+				}
+
+				.leftKeysWrapper {
+					display: none;
+				}
+			}
+
+			.paragraphFirstKey {
+				margin-top: 9.2vh;
+
+				.blackOverlay {
+					width: auto;
+
+					.blackOverlayParagraph {
+						margin-left: 8.33vw;
+						margin-right: 8.33vw;
+						margin-bottom: 4vh;
+						text-align: center;
+					}
+
+					.imageTwo {
+						width: -webkit-fill-available;
+					}
+				}
 			}
 		}
 	}

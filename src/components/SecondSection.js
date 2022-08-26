@@ -16,11 +16,13 @@ const SecondSection = () => {
 		} else {
 			setIsMobile(false);
 		}
+		return;
 	};
 
 	useEffect(() => {
+		handleResize();
 		window.addEventListener("resize", handleResize);
-	});
+	}, []);
 
 	return (
 		<StyledSecondSection>
