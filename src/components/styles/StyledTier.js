@@ -88,15 +88,15 @@ export const StyledTier = styled.div`
 	@media (max-width: 1080px) {
 		.buttonDiv {
 			width: auto;
-			height: 13.98vh;
+			height: 18vw;
 
 			.tierName {
-				font-size: 6vh;
+				font-size: 10vw;
 				margin-left: 8vw;
 			}
 
 			.enrollText {
-				font-size: 6vh;
+				font-size: 10vw;
 				margin-right: 8vw;
 			}
 		}
@@ -106,11 +106,11 @@ export const StyledTier = styled.div`
 			margin-top: 3vw;
 
 			.body {
-				font-size: 1.3rem;
+				font-size: 1.1rem;
 			}
 
 			.price {
-				font-size: 6vh;
+				font-size: 10vw;
 				margin-right: 3vw;
 			}
 		}
