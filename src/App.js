@@ -8,6 +8,8 @@ import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
 import Footer from "./components/Footer";
+import WhySlider from "./components/WhySlider";
+
 import { BrowserRouter } from "react-router-dom";
 
 const theme = {
@@ -21,6 +23,16 @@ const theme = {
 
 function App() {
 	const [scroll, setScrolled] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
+
+	const handleResize = () => {
+		if (window.innerWidth < 1079) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+		}
+		return;
+	};
 
 	const scrollHandler = useCallback(() => {
 		if (window.pageYOffset > 100) {
@@ -30,6 +42,11 @@ function App() {
 		if (window.pageYOffset < 100) {
 			setScrolled(false);
 		}
+	}, []);
+
+	useEffect(() => {
+		handleResize();
+		window.addEventListener("resize", handleResize);
 	}, []);
 
 	useEffect(() => {
@@ -43,6 +60,7 @@ function App() {
 					<Header isScrolled={scroll} primaryColor={theme.colors.primary} />
 					<FirstSection />
 					<SecondSection />
+					{isMobile ? <WhySlider /> : ""}
 					<ThirdSection />
 					<Footer />
 				</div>

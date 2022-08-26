@@ -97,6 +97,10 @@ export const StyledSecondSection = styled.div`
 			display: none;
 		}
 
+		.firstParagraph {
+			font-size: 1rem;
+		}
+
 		.firstWrapper {
 			display: block;
 
@@ -121,6 +125,7 @@ export const StyledSecondSection = styled.div`
 					margin-right: 8.33vw;
 					margin-bottom: 4vw;
 					text-align: center;
+					font-size: 1rem;
 				}
 
 				.imageTwo {

@@ -91,30 +91,30 @@ export const StyledFirstSection = styled.div`
 			margin-top: 21.8vh;
 
 			.name {
-				font-size: 3.35rem;
+				font-size: 2.75rem;
 				padding-left: 0.2vh;
 				margin-bottom: 1vh;
 			}
 
 			.nick {
-				font-size: 8rem;
+				font-size: 6.5rem;
 			}
 
 			.quote {
-				font-size: 2rem;
+				font-size: 1.7rem;
 			}
 
 			.actions {
 				margin-top: 10vh;
 
 				.enrollNow {
-					padding: 1.7vh 8.3vh 2.2vh 8.3vh;
-					font-size: 2rem;
+					padding: 1.5vh 7.5vh 2vh 7.5vh;
+					font-size: 1.7rem;
 					font-weight: 400;
 				}
 
 				.learnMore {
-					font-size: 1.8rem;
+					font-size: 1.6rem;
 					margin-top: 5vh;
 				}
 			}

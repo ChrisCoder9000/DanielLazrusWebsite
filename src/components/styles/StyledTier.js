@@ -84,4 +84,35 @@ export const StyledTier = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 1080px) {
+		.buttonDiv {
+			width: auto;
+			height: 13.98vh;
+
+			.tierName {
+				font-size: 6vh;
+				margin-left: 8vw;
+			}
+
+			.enrollText {
+				font-size: 6vh;
+				margin-right: 8vw;
+			}
+		}
+
+		.textDiv {
+			width: auto;
+			margin-top: 3vw;
+
+			.body {
+				font-size: 1.3rem;
+			}
+
+			.price {
+				font-size: 6vh;
+				margin-right: 3vw;
+			}
+		}
+	}
 `;

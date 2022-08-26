@@ -42,4 +42,24 @@ export const StyledThirdSection = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 1079px) {
+		.subtitle {
+			font-size: 1.7rem;
+		}
+
+		.headline {
+			font-size: 1rem;
+		}
+
+		.mainWrapper {
+			display: block;
+
+			.tiers {
+			}
+
+			.whyKeys {
+			}
+		}
+	}
 `;
