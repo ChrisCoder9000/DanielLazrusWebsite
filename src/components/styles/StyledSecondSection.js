@@ -112,22 +112,19 @@ export const StyledSecondSection = styled.div`
 				}
 			}
 
-			.paragraphFirstKey {
-				margin-top: 9.2vh;
+			.blackOverlay {
+				width: auto;
 
-				.blackOverlay {
-					width: auto;
+				.blackOverlayParagraph {
+					margin-top: 13vw;
+					margin-left: 8.33vw;
+					margin-right: 8.33vw;
+					margin-bottom: 4vw;
+					text-align: center;
+				}
 
-					.blackOverlayParagraph {
-						margin-left: 8.33vw;
-						margin-right: 8.33vw;
-						margin-bottom: 4vh;
-						text-align: center;
-					}
-
-					.imageTwo {
-						width: -webkit-fill-available;
-					}
+				.imageTwo {
+					width: -webkit-fill-available;
 				}
 			}
 		}
