@@ -108,14 +108,14 @@ export const StyledFirstSection = styled.div`
 				margin-top: 10vh;
 
 				.enrollNow {
-					padding: 1.7vh 7vw 2.2vh 7vw;
+					padding: 1.7vh 8.3vh 2.2vh 8.3vh;
 					font-size: 2rem;
 					font-weight: 400;
 				}
 
 				.learnMore {
 					font-size: 1.8rem;
-					margin-top: 4vh;
+					margin-top: 5vh;
 				}
 			}
 		}

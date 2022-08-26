@@ -20,7 +20,9 @@ export const StyledSecondSection = styled.div`
 
 	.imageDiv {
 		margin-top: 6.2vh;
-		margin-left: 8.33vw;
+		@media (min-width: 1080px) {
+			margin-left: 8.33vw;
+		}
 		grid-area: overlap;
 	}
 
@@ -74,5 +76,22 @@ export const StyledSecondSection = styled.div`
 		padding-left: 3.65vw;
 		padding-top: 3vw;
 		text-align: left;
+	}
+
+	@media (max-width: 1079px) {
+		margin-top: 58px;
+		.fourMKey,
+		.fourYKey,
+		.threeBKey {
+			display: none;
+		}
+
+		.firstWrapper {
+			display: block;
+
+			.imageDiv {
+				width: -webkit-fill-available;
+			}
+		}
 	}
 `;

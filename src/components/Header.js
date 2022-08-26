@@ -54,19 +54,19 @@ const Header = (props) => {
 				</div>
 				<nav className={menuClicked ? "navOpen" : "navClosed"}>
 					<div className='linkDiv'>
-						<a className='navSpan' href='#who'>
+						<a className='navSpan' href='#who' onClick={menuHandler}>
 							Who is Daniel Lazarus ?
 						</a>
 						<img src={headerArrow} alt='arrow' className='headerArrow' />
 					</div>
 					<div className='linkDiv'>
-						<a className='navSpan' href='#tiers'>
+						<a className='navSpan' href='#tiers' onClick={menuHandler}>
 							Monthly Coaching Subscriptions
 						</a>
 						<img src={headerArrow} alt='arrow' className='headerArrow' />
 					</div>
 					<div className='linkDiv'>
-						<a className='navSpan' href='#tiers'>
+						<a className='navSpan' href='#tiers' onClick={menuHandler}>
 							Why You Should Enroll?
 						</a>
 						<img src={headerArrow} alt='arrow' className='headerArrow' />

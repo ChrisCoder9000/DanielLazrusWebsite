@@ -5,7 +5,23 @@ import image3 from "../images/image3.png";
 import image2 from "../images/image2.png";
 import Key from "./Key";
 
+import { useState, useEffect } from "react";
+
 const SecondSection = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	const handleResize = () => {
+		if (window.innerWidth < 1079) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("resize", handleResize);
+	});
+
 	return (
 		<StyledSecondSection>
 			<div className='divTitle' id='who'>
@@ -23,7 +39,7 @@ const SecondSection = () => {
 			<div className='firstWrapper'>
 				<div className='imageDiv'>
 					<img
-						src={image3}
+						src={isMobile ? image2 : image3}
 						alt='Daniel with a braclet'
 						className='imageThree'
 					/>
@@ -68,7 +84,7 @@ const SecondSection = () => {
 							seeing similar success. Don’t miss out on this great opportunity!
 						</p>
 						<img
-							src={image2}
+							src={isMobile ? image3 : image2}
 							alt='Daniel with a bracelet'
 							className='imageTwo'
 						/>
