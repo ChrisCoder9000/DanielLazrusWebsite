@@ -7,7 +7,7 @@ const TitleComponent = (props) => {
 		<StyledTitleComponent>
 			<div className='mainDiv'>
 				<div className='divImg'>
-					<img src={pokerChip} className='img' />
+					<img src={pokerChip} className='img' alt='poker chip' />
 				</div>
 				<span className='text'>{props.text}</span>
 				<div className='divDiv'>

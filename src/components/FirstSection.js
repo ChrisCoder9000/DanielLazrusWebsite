@@ -1,12 +1,33 @@
 import { StyledFirstSection } from "./styles/StyledFirstSection";
 import image1 from "../images/image1.png";
+import image1Mobile from "../images/image1Mobile.png";
+
+import { useState, useEffect } from "react";
 
 const FirstSection = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	const handleResize = () => {
+		if (window.innerWidth < 1079) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("resize", handleResize);
+	});
+
 	return (
 		<StyledFirstSection>
 			<div className='mainDiv'>
 				<div className='imageDiv'>
-					<img className='firstImage' src={image1} alt={"Daniel Playing"} />
+					<img
+						className='firstImage'
+						src={isMobile ? image1Mobile : image1}
+						alt={"Daniel Playing"}
+					/>
 				</div>
 				<div className='textLeft'>
 					<h3 className='name'>Daniel Lazrus</h3>

@@ -63,9 +63,7 @@ export const StyledHeader = styled.header`
 
 		.mainHeader {
 			width: 100%;
-			background-color: ${(props) =>
-				props.isScrolled ? props.primaryColor : ""};
-			height: 9.35vh;
+			height: 7vh;
 			align-items: center;
 			display: flex;
 			font-size: 1rem;
@@ -81,7 +79,8 @@ export const StyledHeader = styled.header`
 		}
 
 		.closed {
-			background-color: transparent;
+			background-color: ${(props) =>
+				props.isScrolled ? props.primaryColor : ""};
 		}
 
 		.headerLogo {
@@ -120,6 +119,10 @@ export const StyledHeader = styled.header`
 					height: 1.313rem;
 					text-align: right;
 					padding-right: 8.33vw;
+
+					&:hover {
+						height: 1.7rem;
+					}
 				}
 			}
 		}

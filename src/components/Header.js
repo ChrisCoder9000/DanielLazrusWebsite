@@ -5,7 +5,6 @@ import hamburgherClose from "../assets/hamburgherClose.png";
 import headerArrow from "../assets/headerArrow.png";
 
 import { useState } from "react";
-import { useNavigate } from "react-router";
 
 const Header = (props) => {
 	const [menuClicked, setMenuClicked] = useState(false);

@@ -1,3 +1,9 @@
 .divApp {
 	text-align: -webkit-center;
 }
+
+@media (max-width: 1079px) {
+	.divApp {
+		width: fit-content;
+	}
+}

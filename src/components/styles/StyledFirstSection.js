@@ -25,6 +25,7 @@ export const StyledFirstSection = styled.div`
 		font-weight: 300;
 		font-size: 8.07vh; /* 5.45rem */
 		word-spacing: 0.12vw; /* 0.142rem */
+		margin-left: 0.2vw;
 	}
 
 	.nick {
@@ -52,12 +53,12 @@ export const StyledFirstSection = styled.div`
 	}
 
 	.enrollNow {
-		border: 1px solid ${({ theme }) => theme.colors.secondary};
+		border: 2px solid ${({ theme }) => theme.colors.secondary};
 		color: ${({ theme }) => theme.colors.secondary};
 		font-family: "Mundial";
 		padding: 1.38vh 3.64vw 1.85vh 3.64vw; /* 15px 70px 20px 70px */ /* 1.38vh 3.64vw 1.85vh 3.64vw */
 		font-size: 2.67vh; /* 1.813rem */
-		font-weight: 300;
+		font-weight: 400;
 		background: none;
 		text-decoration: none;
 
@@ -84,63 +85,39 @@ export const StyledFirstSection = styled.div`
 	.imageDiv {
 		width: 100%;
 	}
+
+	@media (max-width: 1079px) {
+		.textLeft {
+			margin-top: 21.8vh;
+
+			.name {
+				font-size: 3.35rem;
+				padding-left: 0.2vh;
+				margin-bottom: 1vh;
+			}
+
+			.nick {
+				font-size: 8rem;
+			}
+
+			.quote {
+				font-size: 2rem;
+			}
+
+			.actions {
+				margin-top: 10vh;
+
+				.enrollNow {
+					padding: 1.7vh 7vw 2.2vh 7vw;
+					font-size: 2rem;
+					font-weight: 400;
+				}
+
+				.learnMore {
+					font-size: 1.8rem;
+					margin-top: 4vh;
+				}
+			}
+		}
+	}
 `;
-
-// .textLeft {
-// 		position: absolute;
-// 		margin-top: 32vh;
-// 		margin-left: 8.33vw;
-// 		text-align: left;
-// 	}
-
-// 	.name {
-// 		margin: 0;
-// 		font-weight: 300;
-// 		font-size: 5.45rem;
-// 		word-spacing: 0.142rem;
-// 	}
-
-// 	.nick {
-// 		margin: 0;
-// 		font-size: 13rem;
-// 		font-weight: 700;
-// 		margin-top: -70px;
-// 		margin-left: -8px;
-// 	}
-
-// 	.quote {
-// 		margin: 0;
-// 		font-weight: 100;
-// 		font-size: 3.3rem;
-// 		word-spacing: 0.142rem;
-// 		margin-top: -30px;
-// 		margin-left: 8px;
-// 	}
-
-// 	.actions {
-// 		margin-top: 73px;
-// 		margin-left: 8px;
-// 		text-align: center;
-// 		width: fit-content;
-// 	}
-
-// 	.enrollNow {
-// 		border: 1px solid ${({ theme }) => theme.colors.secondary};
-// 		color: ${({ theme }) => theme.colors.secondary};
-// 		font-family: "Mundial";
-// 		padding: 15px 70px 20px 70px;
-// 		font-size: 1.813rem;
-// 		font-weight: 300;
-// 		background: none;
-// 	}
-
-// 	.learnMore {
-// 		display: block;
-// 		font-size: 1.813rem;
-// 		margin-top: 33px;
-
-// 		img {
-// 			margin-left: 78px;
-// 			width: 11px;
-// 		}
-// 	}
