@@ -77,4 +77,28 @@ export const StyledFooter = styled.div`
 		align-self: end;
 		margin-bottom: 5vh;
 	}
+
+	@media (max-width: 1079px) {
+		height: auto;
+
+		.wrapper {
+			display: block;
+
+			.placeholderLogo {
+				margin-top: 11.37vh;
+			}
+
+			.socialsDiv {
+				margin-bottom: 5vh;
+			}
+
+			.linksDiv {
+				margin-bottom: 5vh;
+			}
+		}
+
+		.divSpanCopyright {
+			margin-top: 5vh;
+		}
+	}
 `;

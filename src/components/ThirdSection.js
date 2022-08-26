@@ -9,10 +9,28 @@ import compass from "../assets/compass.png";
 import gamesboard from "../assets/gameboard.png";
 import twentyFourHours from "../assets/twentyFourHours.png";
 
+import { useState, useEffect } from "react";
+
 const ThirdSection = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
 	const enrollButtonHandler = () => {
 		console.log("enrolled!");
 	};
+
+	const handleResize = () => {
+		if (window.innerWidth < 1079) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+		}
+		return;
+	};
+
+	useEffect(() => {
+		handleResize();
+		window.addEventListener("resize", handleResize);
+	}, []);
 
 	return (
 		<StyledThirdSection>
@@ -49,10 +67,11 @@ const ThirdSection = () => {
 						/>
 					</div>
 				</div>
+				{isMobile ? <TitleComponent text='WHY ENROLL?' /> : ""}
 				<div className='whyKeys'>
-					<span className='spanKeys'>
+					<h1 className='hKeys'>
 						Learn the key to crush MTT’s and deep stack cash
-					</span>
+					</h1>
 					<div className='listKeys'>
 						<ListKey
 							image={cards}

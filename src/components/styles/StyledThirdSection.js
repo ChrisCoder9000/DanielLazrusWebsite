@@ -24,7 +24,10 @@ export const StyledThirdSection = styled.div`
 
 		.whyKeys {
 			margin-top: 12.07vh;
-			margin-left: 10.1vw;
+
+			@media (min-width: 1079px) {
+				margin-left: 10.1vw;
+			}
 
 			.spanKeys {
 				font-family: sans-serif;
@@ -56,10 +59,19 @@ export const StyledThirdSection = styled.div`
 			display: block;
 
 			.tiers {
+				margin-bottom: 25.83vh;
 			}
 
 			.whyKeys {
+				margin-top: 6.52vh;
+
+				.hKeys {
+					font-size: 2rem;
+					margin-bottom: 9.6vh;
+				}
 			}
 		}
+
+		margin-bottom: 39.45vh;
 	}
 `;
