@@ -2,8 +2,8 @@
 	text-align: -webkit-center;
 }
 
-/* @media (max-width: 1079px) {
-	.divApp {
-		width: fit-content;
-	}
-} */
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
