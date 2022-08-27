@@ -60,6 +60,7 @@ function App() {
 					<Header isScrolled={scroll} primaryColor={theme.colors.primary} />
 					<FirstSection />
 					<SecondSection />
+					<div id='why-slider' />
 					{isMobile ? <WhySlider /> : ""}
 					<ThirdSection />
 					<Footer />

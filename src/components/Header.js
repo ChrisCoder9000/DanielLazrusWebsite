@@ -4,14 +4,29 @@ import hamburgherOpen from "../assets/hamburgherOpen.png";
 import hamburgherClose from "../assets/hamburgherClose.png";
 import headerArrow from "../assets/headerArrow.png";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = (props) => {
 	const [menuClicked, setMenuClicked] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 
 	const menuHandler = () => {
 		setMenuClicked(!menuClicked);
 	};
+
+	const handleResize = () => {
+		if (window.innerWidth < 1079) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+		}
+		return;
+	};
+
+	useEffect(() => {
+		handleResize();
+		window.addEventListener("resize", handleResize);
+	}, []);
 
 	return (
 		<StyledHeader
@@ -57,19 +72,44 @@ const Header = (props) => {
 						<a className='navSpan' href='#who' onClick={menuHandler}>
 							Who is Daniel Lazarus ?
 						</a>
-						<img src={headerArrow} alt='arrow' className='headerArrow' />
+						<a href='#who'>
+							<img
+								src={headerArrow}
+								alt='arrow'
+								className='headerArrow'
+								onClick={menuHandler}
+							/>
+						</a>
 					</div>
 					<div className='linkDiv'>
 						<a className='navSpan' href='#tiers' onClick={menuHandler}>
 							Monthly Coaching Subscriptions
 						</a>
-						<img src={headerArrow} alt='arrow' className='headerArrow' />
+						<a href='#tiers'>
+							<img
+								src={headerArrow}
+								alt='arrow'
+								className='headerArrow'
+								onClick={menuHandler}
+							/>
+						</a>
 					</div>
 					<div className='linkDiv'>
-						<a className='navSpan' href='#tiers' onClick={menuHandler}>
+						<a
+							className='navSpan'
+							href={isMobile ? "#why-slider" : "#tiers"}
+							onClick={menuHandler}
+						>
 							Why You Should Enroll?
 						</a>
-						<img src={headerArrow} alt='arrow' className='headerArrow' />
+						<a href={isMobile ? "#why-slider" : "#tiers"}>
+							<img
+								src={headerArrow}
+								alt='arrow'
+								className='headerArrow'
+								onClick={menuHandler}
+							/>
+						</a>
 					</div>
 				</nav>
 			</div>
