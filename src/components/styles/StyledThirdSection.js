@@ -5,7 +5,7 @@ export const StyledThirdSection = styled.div`
 	margin-right: 8.33vw;
 
 	.titleDiv {
-		padding-top: 12.07vh;
+		padding-top: 18.07vh;
 	}
 
 	.subtitle {
