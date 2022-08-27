@@ -6,6 +6,10 @@ export const StyledThirdSection = styled.div`
 
 	.titleDiv {
 		padding-top: 18.07vh;
+
+		@media (max-width: 1079px) {
+			padding-top: 12.07vh;
+		}
 	}
 
 	.subtitle {
